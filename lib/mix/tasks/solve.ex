@@ -52,6 +52,8 @@ defmodule Mix.Tasks.Solve do
           end
         end)
 
+        IO.write("\n")
+
       _ ->
         nil
     end
