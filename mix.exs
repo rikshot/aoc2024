@@ -12,6 +12,7 @@ defmodule AoC.MixProject do
 
   defp deps do
     [
+      {:arrays, "~> 2.1"},
       {:benchee, "~> 1.0", only: [:dev, :test]}
     ]
   end
