@@ -1,0 +1,14 @@
+on: push
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+    name: Solve
+    steps:
+      - uses: actions/checkout@v4
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: latest
+          elixir-version: "1.17"
+      - run: mix deps.get
+      - run: mix solve
