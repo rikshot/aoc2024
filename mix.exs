@@ -5,7 +5,7 @@ defmodule AoC.MixProject do
     [
       app: :aoc,
       version: "0.1.0",
-      elixir: "~> 1.17",
+      elixir: "~> 1.18",
       deps: deps()
     ]
   end
